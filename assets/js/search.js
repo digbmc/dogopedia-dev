@@ -3,13 +3,20 @@
 ---
 // Based on a script by Kathie Decora : katydecorah.com/code/lunr-and-jekyll/
 
+// Add support for multi-language content with lunr-languages
+var lunr = require('./lunr.js');
+require('./lunr.stemmer.support.js')(lunr);
+require('./lunr.ru.js')(lunr);
+require('./lunr.multi.js')(lunr);
+
 // Create the lunr index for the search
-var index = elasticlunr(function () {
-  this.addField('title')
-  this.addField('author')
-  this.addField('layout')
-  this.addField('content')
-  this.setRef('id')
+var index = lunr(function () {
+  this.use(lunr.multiLanguage('en', 'ru'));
+  this.field('title')
+  this.field('author')
+  this.field('layout')
+  this.field('content')
+  this.ref('id')
 });
 
 // Add to this index the proper metadata from the Jekyll content
@@ -18,7 +25,7 @@ index.addDoc({
   title: {{text.title | jsonify}},
   author: {{text.author | jsonify}},
   layout: {{text.layout | jsonify}},
-  content: {{text.content | jsonify | strip_html}},
+  content: {{text.content | strip_html | jsonify }},
   id: {{count}}
 });{% assign count = count | plus: 1 %}{% endfor %}
 console.log( jQuery.type(index) );
