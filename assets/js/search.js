@@ -19,18 +19,18 @@ var index = lunr(function () {
   this.field('layout')
   this.field('content')
   this.ref('id')
-});
 
-// Add to this index the proper metadata from the Jekyll content
-{% assign count = 0 %}{% for text in site.texts %}
-index.add({
-  title: {{text.title | jsonify}},
-  author: {{text.author | jsonify}},
-  layout: {{text.layout | jsonify}},
-  content: {{text.content | strip_html | jsonify }},
-  id: {{count}}
-});{% assign count = count | plus: 1 %}{% endfor %}
-console.log( jQuery.type(index) );
+  // Add to this index the proper metadata from the Jekyll content
+  {% assign count = 0 %}{% for text in site.texts %}
+  this.add({
+    title: {{text.title | jsonify}},
+    author: {{text.author | jsonify}},
+    layout: {{text.layout | jsonify}},
+    content: {{text.content | strip_html | jsonify }},
+    id: {{count}}
+  });{% assign count = count | plus: 1 %}{% endfor %}
+  console.log( jQuery.type(index) );
+});
 
 // Builds reference data (maybe not necessary for us, to check)
 var store = [{% for text in site.texts %}
