@@ -4,10 +4,10 @@
 // Based on a script by Kathie Decora : katydecorah.com/code/lunr-and-jekyll/
 
 // Add support for multi-language content with lunr-languages
-var lunr = require('./lunr.js');
-require('./lunr.stemmer.support.js')(lunr);
-require('./lunr.ru.js')(lunr);
-require('./lunr.multi.js')(lunr);
+var lunr = require('{{site.baseurl}}/assets/js/lunr.js');
+require('{{site.baseurl}}/assets/js/lunr.stemmer.support.js')(lunr);
+require('{{site.baseurl}}/assets/js/lunr.ru.js')(lunr);
+require('{{site.baseurl}}/assets/js/lunr.multi.js')(lunr);
 
 // Create the lunr index for the search
 var index = lunr(function () {
