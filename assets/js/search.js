@@ -13,8 +13,7 @@ require('{{site.baseurl}}/assets/js/lunr.multi.js')(lunr);
 
 // Create the lunr index for the search
 var index = lunr(function () {
-  this.use(lunr.ru);
-  // this.use(lunr.multiLanguage('en', 'ru'));
+  this.use(lunr.multiLanguage('en', 'ru'));
   this.field('title');
   this.field('author');
   this.field('layout');
