@@ -23,7 +23,7 @@ var index = lunr(function () {
 
 // Add to this index the proper metadata from the Jekyll content
 {% assign count = 0 %}{% for text in site.texts %}
-index.addDoc({
+index.add({
   title: {{text.title | jsonify}},
   author: {{text.author | jsonify}},
   layout: {{text.layout | jsonify}},
