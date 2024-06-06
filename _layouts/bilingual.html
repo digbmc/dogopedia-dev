@@ -248,33 +248,44 @@
       }
 
       // Support language toggle in annotation panel
+
       var russianAnnotations = document.getElementById("annotations-ru");
+      var russianChapterNotes = document.getElementById("ch-notes-ru");
       function showEnglishAnnotations(){
         if (russianAnnotations.classList.contains("lang-ru")) {
           russianAnnotations.classList.remove("lang-ru");
+          russianChapterNotes.classList.remove("lang-ru");
         }
         if (russianAnnotations.classList.contains("lang-both")) {
           russianAnnotations.classList.remove("lang-both");
+          russianChapterNotes.classList.remove("lang-both");
         }
         russianAnnotations.classList.add("lang-en");
+        russianChapterNotes.classList.add("lang-en");
       }
       function showRussianAnnotations(){
         if (russianAnnotations.classList.contains("lang-en")) {
           russianAnnotations.classList.remove("lang-en");
+          russianChapterNotes.classList.remove("lang-en");
         }
         if (russianAnnotations.classList.contains("lang-both")) {
           russianAnnotations.classList.remove("lang-both");
+          russianChapterNotes.classList.remove("lang-both");
         }
         russianAnnotations.classList.add("lang-ru");
+        russianChapterNotes.classList.add("lang-ru");
       }
       function showBothAnnotations(){
         if (russianAnnotations.classList.contains("lang-en")) {
           russianAnnotations.classList.remove("lang-en");
+          russianChapterNotes.classList.remove("lang-en");
         }
         if (russianAnnotations.classList.contains("lang-ru")) {
           russianAnnotations.classList.remove("lang-ru");
+          russianChapterNotes.classList.remove("lang-ru");
         }
         russianAnnotations.classList.add("lang-both");
+        russianChapterNotes.classList.add("lang-both");
       }
 
       // Expand and collapse the annotation panel

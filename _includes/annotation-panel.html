@@ -10,7 +10,7 @@
         <div id="ch-notes-en">
             {% assign annotations-en = site.data.comments-chap-notes | where: "lang", "en" %}
             {% for annotation in annotations-en %}
-            {% assign chapter = annotation.chapter | truncate: 2, "" %}
+            {% if annotation.chapter == "Front Matter" %}{% assign chapter = "00" %}{% else %}{% assign chapter = annotation.chapter | truncate: 2, "" %}{% endif %}
             {% if chapter == page.number %}
                 <div id="{{ annotation.Id }}" class="annotation">
                 {% assign image-src = annotation.img_src %}
@@ -98,7 +98,7 @@
         <div id="annotations-en">
             {% assign annotations-en = site.data.comments-all | where: "lang", "en" %}
             {% for annotation in annotations-en %}
-              {% assign chapter = annotation.chapter | truncate: 2, "" %}
+            {% if annotation.chapter == "Front Matter" %}{% assign chapter = "00" %}{% else %}{% assign chapter = annotation.chapter | truncate: 2, "" %}{% endif %}
               {% if chapter == page.number %}
                 <div id="{{ annotation.Id }}" class="annotation">
                     {% assign image-src = annotation.img_src %}
