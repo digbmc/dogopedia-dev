@@ -255,6 +255,7 @@ article.page.toc-page {
   top: 0;
   height: 65px;
   width: 100%;
+  z-index: 2;
 }
 
 .menu-bar {
@@ -264,7 +265,6 @@ article.page.toc-page {
   background-color: #99AAC1;
   text-align: center;
   padding: .75rem .75rem .5rem;
-  z-index: 6;
 
   ul {
     list-style: none;
@@ -717,4 +717,31 @@ a, .text-title a {
   /* color:#a9b9ca; */
   color: $link-color;
   text-decoration: none;
+}
+
+/* Chapter Transitions */
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#chapter-content {
+  .text-title, li.this-chapter, .main-content {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes no-fade {
+  from {opacity: 1;}
+  to {opacity: 1;}
+}
+
+.menu-bar {
+  animation-name: no-fade;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }

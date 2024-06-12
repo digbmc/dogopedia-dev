@@ -87,6 +87,8 @@ body {
   padding: 0 1rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 56em) {
