@@ -727,11 +727,19 @@ a, .text-title a {
 }
 
 #chapter-content {
-  .text-title, li.this-chapter, .main-content {
+  li.this-chapter, .text-title, .main-content {
     animation-name: fade-in;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
     animation-fill-mode: both;
+  }
+  
+  .text-title {
+    animation-delay: 0.2s;
+  }
+  
+  .main-content {
+    animation-delay: 0.4s;
   }
 }
 
