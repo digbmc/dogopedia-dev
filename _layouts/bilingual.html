@@ -78,7 +78,7 @@
             {{ content }}
         
         </main>
-        <footer>
+        <footer id="footer">
           <div class="byline-container-footer">
             <p>From <em>Between Dog and Wolf</em> by Sasha Sokolov, translated by Alexander Boguslawski.</p>
           </div>
@@ -225,7 +225,7 @@
           spansToHide[i].setAttribute ("tabindex", "0");
           spansToHide[i].setAttribute ("aria-hidden", "false");
         }
-        document.getElementById("texts").style.padding = "0 0 5rem";
+        document.getElementById("footer").style.margin = "0 auto 200px";
       }
 
       // Hide annotations
@@ -248,7 +248,8 @@
           spansToHide[i].setAttribute ("tabindex", "-1");
           spansToHide[i].setAttribute ("aria-hidden", "true");
         }
-        document.getElementById("texts").style.padding = "0";
+        
+        document.getElementById("footer").style.margin = "0 auto";
         document.cookie = "storedAnnotationLanguage=off; path=/";
       }
 
@@ -299,6 +300,7 @@
       // Expand and collapse the annotation panel
       function expandAnnotations(){
         document.getElementById("panel-btn-container").classList.toggle("expanded");
+        document.getElementById("footer").classList.toggle("expanded");
       }
 
       // Make clickable spans keyboard accessible
