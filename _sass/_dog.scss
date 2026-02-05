@@ -101,12 +101,12 @@
 
 .homepage-intro-container {
   width: 60%;
-  margin: 0 2.5% 0 0;
+  float: left;
 }
 
 .homepage-toc-container {
-  width: 35%;
-  margin: 0 0 0 2.5%;
+  width: 30%;
+  float: right;
   padding: .5rem;
   background: #fafafa;
   border: 1px solid #c3c3c3;

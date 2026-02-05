@@ -9,7 +9,7 @@ title: "Encyclopedia of the Dog"
 <div class="homepage-toc-container">
     <div class="homepage-toc-header">
         <h2>On this page:</h2>
-    <div>
+    </div>
     <div class="homepage-toc-body">
         <ul>
             <li><a href="#how-to-use">How to use this edition</a></li>
