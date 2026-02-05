@@ -3,24 +3,19 @@ layout: home
 title: "Encyclopedia of the Dog"
 ---
 
-<div class="homepage-row">
-    <div class="homepage-intro-container">
-        <em>The Encyclopedia of the Dog</em> is a complete and freely accessible bilingual digital edition of Sasha Sokolov’s 1980 novel <em>Between Dog and Wolf</em>. It features both the original Russian text and Alexander Boguslawski’s English translation as well as multiple kinds of annotations to help readers grasp the various meanings, allusions, and layers of the novel.
+<div class="homepage-toc-container">
+    <div class="homepage-toc-header">
+        <h2>On this page:</h2>
     </div>
-    <div class="homepage-toc-container">
-        <div class="homepage-toc-header">
-            <h2>On this page:</h2>
-        </div>
-        <div class="homepage-toc-body">
-            <ul>
-                <li><a href="#how-to-use">How to use this edition</a></li>
-                <li><a href="#tag-glossary">Tag glossary</a></li>
-            </ul>
-        </div>
+    <div class="homepage-toc-body">
+        <ul>
+            <li><a href="#how-to-use">How to use this edition</a></li>
+            <li><a href="#tag-glossary">Tag glossary</a></li>
+        </ul>
     </div>
 </div>
 
-<div class="homepage-row" markdown="1">
+*The Encyclopedia of the Dog* is a complete and freely accessible bilingual digital edition of Sasha Sokolov’s 1980 novel *Between Dog and Wolf*. It features both the original Russian text and Alexander Boguslawski’s English translation as well as multiple kinds of annotations to help readers grasp the various meanings, allusions, and layers of the novel.
 
 <h2 id="how-to-use">How to use this edition</h2>
 
@@ -123,4 +118,3 @@ We have used a system of tags to track patterns in *Between Dog and Wolf*. These
 *Time*: temporal settings or references
 
 *Translation*: translation issues in Boguslawski’s version of the novel and differences from the original
-</div>
