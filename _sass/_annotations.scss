@@ -20,6 +20,10 @@
   span.annotation-link {
     background-color: #778eac5f;
     cursor: pointer;
+
+    &:focus {
+      background-color: #F2CB3A;
+    }
   }
 
   ~ #annotation-panel,
