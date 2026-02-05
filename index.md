@@ -12,8 +12,8 @@ title: "Encyclopedia of the Dog"
     <div>
     <div class="homepage-toc-body">
         <ul>
-            <li><a href="#how-to-use"></a>How to use this edition</li>
-            <li><a href="#tag-glossary"></a>Tag glossary</li>
+            <li><a href="#how-to-use">How to use this edition</a></li>
+            <li><a href="#tag-glossary">Tag glossary</a></li>
         </ul>
     </div>
 </div>

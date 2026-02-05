@@ -99,6 +99,20 @@
   }
 }
 
+.homepage-intro-container {
+  width: 60%;
+  margin: 0 2.5% 0 0;
+}
+
+.homepage-toc-container {
+  width: 35%;
+  margin: 0 0 0 2.5%;
+  padding: .5rem;
+  background: #fafafa;
+  border: 1px solid #c3c3c3;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 820px) {
   .homepage-content .table-container {
     max-width: 90vw;
@@ -171,20 +185,6 @@ footer.homepage-footer {
 
   .homepage-content {
     padding: 1rem 1rem 0;
-  }
-
-  .homepage-intro-container {
-    width: 60%;
-    margin: 0 2.5% 0 0;
-  }
-
-  .homepage-toc-container {
-    width: 35%;
-    margin: 0 0 0 2.5%;
-    padding: .5rem;
-    background: #fafafa;
-    border: 1px solid #c3c3c3;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   }
 
   .homepage-footer {
