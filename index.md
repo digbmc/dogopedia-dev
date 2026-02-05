@@ -20,6 +20,8 @@ title: "Encyclopedia of the Dog"
     </div>
 </div>
 
+<div class="homepage-row" markdown="1">
+
 <h2 id="how-to-use">How to use this edition</h2>
 
 The Table of Contents can be accessed from the sidebar by clicking the menu icon in the top left corner of any page. Links to all chapters can be found in the Table of Contents and in the menu bar at the top of chapter pages on computers and tablets. The menu bar also contains “Language” and “Annotations” dropdowns which can be used to toggle the language of the text (English, Russian, or both side by side) and the visibility of annotations, respectively.
@@ -121,3 +123,4 @@ We have used a system of tags to track patterns in *Between Dog and Wolf*. These
 *Time*: temporal settings or references
 
 *Translation*: translation issues in Boguslawski’s version of the novel and differences from the original
+</div>
