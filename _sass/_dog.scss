@@ -158,10 +158,6 @@ footer.homepage-footer {
     width: 100%;
     text-align: left;
   }
-
-  .homepage-toc-container {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -185,6 +181,10 @@ footer.homepage-footer {
 
   .homepage-content {
     padding: 1rem 1rem 0;
+  }
+
+  .homepage-toc-container {
+    width: 100%;
   }
 
   .homepage-footer {
