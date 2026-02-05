@@ -3,19 +3,9 @@ layout: home
 title: "Encyclopedia of the Dog"
 ---
 
-<div class="homepage-toc-container">
-    <div class="homepage-toc-header">
-        <h2>On this page:</h2>
-    </div>
-    <div class="homepage-toc-body">
-        <ul>
-            <li><a href="#how-to-use">How to use this edition</a></li>
-            <li><a href="#tag-glossary">Tag glossary</a></li>
-        </ul>
-    </div>
-</div>
-
 *The Encyclopedia of the Dog* is a complete and freely accessible bilingual digital edition of Sasha Sokolov’s 1980 novel *Between Dog and Wolf*. It features both the original Russian text and Alexander Boguslawski’s English translation as well as multiple kinds of annotations to help readers grasp the various meanings, allusions, and layers of the novel.
+
+See below for instructions on <a href="#how-to-use">how to use this edition</a> as well as a <a href="#tag-glossary">glossary of tags</a> used in the annotations.
 
 <h2 id="how-to-use">How to use this edition</h2>
 
