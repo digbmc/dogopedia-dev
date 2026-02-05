@@ -99,14 +99,14 @@
   }
 }
 
-.homepage-intro-container {
-  width: 60%;
-  float: left;
+.homepage-toc-container {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .homepage-toc-container {
-  width: 30%;
-  float: right;
+  margin-top: 0;
+  margin-bottom: 1rem;
   padding: .5rem;
   background: #fafafa;
   border: 1px solid #c3c3c3;
@@ -186,16 +186,6 @@ footer.homepage-footer {
 
   .homepage-content {
     padding: 1rem 1rem 0;
-  }
-
-  .homepage-intro-container {
-    width: 100%;
-    float: none;
-  }
-
-  .homepage-toc-container {
-    width: 100%;
-    float: none;
   }
 
   .homepage-footer {
